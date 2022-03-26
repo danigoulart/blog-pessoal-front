@@ -1,3 +1,15 @@
-.fs {
-font-size: 16pt;
+.fs-16{
+  font-size: 16pt;
+
+}
+a{
+
+  cursor: pointer;
+}
+
+.bg-navbar{
+  color: #f34534!important;
+}
+i{
+  color: #f34534;
 }

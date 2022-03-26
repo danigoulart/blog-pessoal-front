@@ -1,8 +1,96 @@
-#img-bg{
-  background-image: url("https://i.ibb.co/2SfKWpM/download20220101203425.png");
+@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
 
-  min-height:695px;
+.bg {
+  background-image: url(https://i.ibb.co/YWJsfKK/5231801.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+  align-items: center;
+  background-position: center;
+  display: flex;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  right: 0;
+  overflow: auto;
+  padding: 3em;
+  position: absolute;
+}
+
+#img-bg {
+  min-height: 800px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+
+.box {
+  box-sizing: border-box;
+  box-shadow: 2px 2px 2px 2px #f34534;
+  border-radius: 5px;
+}
+
+input {
+  font-size: 12px;
+}
+
+.pokebola {
+  width: 67px;
+  height: auto;
+  margin-left: 0;
+}
+
+.login {
+  font-family: "VT323", monospace;
+  font-size: 18px;
+}
+.login-font {
+  font-family: "VT323", monospace;
+  font-size: 35pt;
+  display: flex;
+  align-items: center;
+}
+
+.box {
+  box-shadow: 20px 20px 58px rgba(163, 7, 225, 0.25);
+  border-top: 1px solid rgba(215, 156, 226, 0.5);
+  border-right: 1px solid rgba(209, 62, 185, 0.5);
+  backdrop-filter: blur(10px);
+
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.btn {
+  font-family: "VT323", monospace;
+  font-size: 15pt;
+  font-weight: bold;
+  margin-right: 40px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: 0.5s;
+  line-height: 30px;
+  margin-left: 20px;
+  background-color: rgba(153, 69, 173, 0.658);
+}
+
+.btn:hover {
+  background: #f334ba
+    url(https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX11692316.jpg);
+  color: #ffff;
+  transition-delay: 0.5s;
+  background-size: auto;
+  animation: animate 0.8s steps(8) forwards;
+}
+
+@keyframes animate {
+  0% {
+    background-position-y: 0px;
+  }
+
+  100% {
+    background-position-y: -480px;
+  }
 }

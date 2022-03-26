@@ -1,26 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
 ul.social-network{
-  list-style: none;
-  padding: 0;
+    list-style: none;
+    padding: 0;
+}
+ul.social-network li{
+    display: inline;
+    margin: 0;
+    padding: 5px;
+
+}
+.fa-brands{
+    font-size: 35pt;
+    color: aliceblue;
+    padding: 10px;
+}
+.fa-facebook:hover{
+    color: #3b5998;
+}
+.fa-instagram:hover{
+    color: #C13584;
+}
+.fa-github:hover{
+    color: black;
+}
+.fa-linkedin:hover{
+    color:#0a66c2;
+}
+.bg-footer{
+    background-color: #f34434e1 ;
 }
 
-ul.social-network li {
-  display: inline;
-  margin: 0;
-  padding: 5px;
-
+.bg-copyright{
+    background-color: rgb(26, 24, 31) !important;
 }
 
-.fa{
-  font-size: 35pt;
-  color: white;
-  padding: 10px;
+h4{
+font-family: 'VT323', monospace;
+font-size: 20pt;
 }
-
-.fa-brands fa-github:hover{
-  color:aqua;
-}
-
-.fa-brands fa-linkedin:hover{
-  color:aqua;
-}
-

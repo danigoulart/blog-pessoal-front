@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+#pok{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bg{
+    background-image: url(https://i.ibb.co/1Z34nZ4/background.png);
+    background-position: center;
+    background-repeat:  no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    right: 0;
+    overflow: auto;
+    padding: 3em;
+    position: absolute;
+
+}
+
+
+.m-20{
+    margin-left: 20px;
+    background-color:#ff3434d7;
+    color: #fff;
+}
+
+.btn:hover{
+    background-color: #28226fbb;
+    color: black;
+}
+.box{
+
+    box-sizing: border-box;
+    box-shadow: 15px 15px 18px #28226fbb;
+    border-radius: 5px;
+    border-top: 1px solid rgba(27, 31, 134, 0.5);
+    border-right: 1px solid rgba(36, 23, 153, 0.5);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+input{
+    font-size: 12px;
+}
+
+select{
+    font-size: 12px;
+}
+.font{
+    font-family: 'VT323', monospace;
+    font-size: 18px;
+    color: aliceblue;
+
+}
+
+.font-login{
+   color: aliceblue;
+    font-family: 'VT323', monospace;
+    font-size: 42pt;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pokebola{
+
+    width: 67px;
+    height: auto;
+    margin-left: 0;
+}
+
+.btn {
+    font-family   : 'VT323', monospace;
+    font-size     : 15pt;
+    font-weight   : bold;
+    margin-right  : 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition    : 0.5s;
+    line-height   : 30px;
+    margin-left: 20px;
+    background-color: rgba(248, 245, 52, 0.76);
+
+}
+
+.btn-1:hover {
+    background      : #4ce5f5 url(https://i.ibb.co/Yh5zSMH/pixel.png);
+    color           : #ffff;
+    transition-delay: 0.5s;
+    background-size : auto;
+    animation       : animate 0.8s steps(8) forwards;
+}
+
+.btn-2:hover{
+    background      : #f34534 url(https://i.ibb.co/Z11z5jn/pixel2.png);
+    color           : #ffff;
+    transition-delay: 0.5s;
+    background-size : auto;
+    animation       : animate 0.8s steps(8) forwards;
+}
+
+@keyframes animate {
+    0% {
+        background-position-y: 0px;
+    }
+
+    100% {
+        background-position-y: -480px;
+    }
+
+}
