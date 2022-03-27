@@ -8,8 +8,23 @@ a{
 }
 
 .bg-navbar{
-  color: #f34534!important;
+  color: #550955!important;
 }
 i{
-  color: #f34534;
+  color: #55b0d4;
+}
+
+.font-color{
+  color: #55b0d4;
+}
+
+.bg-color{
+  background-color: rgba(164, 62, 248, 0.76);
+}
+
+#nav{
+  radius:30px;
+}
+.color2{
+  font-color: #650d68;
 }

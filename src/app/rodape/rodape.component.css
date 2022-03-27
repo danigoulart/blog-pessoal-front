@@ -28,14 +28,39 @@ ul.social-network li{
     color:#0a66c2;
 }
 .bg-footer{
-    background-color: #f34434e1 ;
+    background-color: #8c20d486 ;
+    background: linear-gradient(90deg, #19b3c7 0%, #db20cc 100%)
 }
 
 .bg-copyright{
-    background-color: rgb(26, 24, 31) !important;
+    background-color: #2f0341be !important;
 }
 
 h4{
 font-family: 'VT323', monospace;
 font-size: 20pt;
+}
+
+@keyframes changeBackgroundColor {
+  0% {
+      background-position: 0% 50%;
+  }
+
+  50% {
+      background-position: 100%;
+  }
+
+  100% {
+      background-position: 50% 0%;
+  }
+}
+.bg-red-dark{
+
+  background: linear-gradient(135deg, #3c949f, #611494, #bb299b);
+  background-size: 300% 300%;
+  animation: changeBackgroundColor 15s ease infinite;
+}
+
+.m-top {
+  padding-bottom: 1px !important;
 }

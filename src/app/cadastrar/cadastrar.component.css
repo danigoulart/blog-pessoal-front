@@ -6,7 +6,7 @@
     align-items: center;
 }
 .bg{
-    background-image: url(https://i.ibb.co/1Z34nZ4/background.png);
+    background-image: url(https://i.ibb.co/NT6vBPB/5471985.jpg);
     background-position: center;
     background-repeat:  no-repeat;
     background-size: cover;
@@ -17,7 +17,7 @@
     top: 0;
     right: 0;
     overflow: auto;
-    padding: 3em;
+    padding: 0em;
     position: absolute;
 
 }
@@ -25,8 +25,8 @@
 
 .m-20{
     margin-left: 20px;
-    background-color:#ff3434d7;
-    color: #fff;
+    background-color:#970b8cd7;
+    color: rgb(248, 198, 241);
 }
 
 .btn:hover{
@@ -36,12 +36,12 @@
 .box{
 
     box-sizing: border-box;
-    box-shadow: 15px 15px 18px #28226fbb;
-    border-radius: 5px;
-    border-top: 1px solid rgba(27, 31, 134, 0.5);
-    border-right: 1px solid rgba(36, 23, 153, 0.5);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
+    box-shadow: 20px 20px 58px #bc8fcabb;
+    border-radius: 20px;
+    border-top: 15px solid rgba(195, 71, 219, 0.904);
+    border-right: 1px solid rgba(209, 23, 226, 0.5);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(50px);
 }
 
 input{
@@ -54,23 +54,22 @@ select{
 .font{
     font-family: 'VT323', monospace;
     font-size: 18px;
-    color: aliceblue;
+    color: #25c0f0;
 
 }
 
 .font-login{
-   color: aliceblue;
+   color: #aa64c5;
     font-family: 'VT323', monospace;
     font-size: 42pt;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.pokebola{
-
-    width: 67px;
-    height: auto;
-    margin-left: 0;
+.pokebola {
+  width: 110px;
+  height: auto;
+  margin-left: -50px;
 }
 
 .btn {
@@ -83,12 +82,12 @@ select{
     transition    : 0.5s;
     line-height   : 30px;
     margin-left: 20px;
-    background-color: rgba(248, 245, 52, 0.76);
+    background-color: rgba(216, 79, 243, 0.76);
 
 }
 
 .btn-1:hover {
-    background      : #4ce5f5 url(https://i.ibb.co/Yh5zSMH/pixel.png);
+    background      : #4ce5f5 url(https://cdn.wallpapersafari.com/45/32/BFmZqw.jpg);
     color           : #ffff;
     transition-delay: 0.5s;
     background-size : auto;
@@ -96,7 +95,7 @@ select{
 }
 
 .btn-2:hover{
-    background      : #f34534 url(https://i.ibb.co/Z11z5jn/pixel2.png);
+    background      : #f34534 url(https://media.istockphoto.com/vectors/pixel-border-edge-pattern-transition-element-vector-id1193532945?k=20&m=1193532945&s=170667a&w=0&h=DW5oDSo_4oDyD_AqeIpEV7lxwpvVEbC3ZfZ576Vwz_A=);
     color           : #ffff;
     transition-delay: 0.5s;
     background-size : auto;

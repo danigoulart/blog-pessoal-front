@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+@import url(https://i.ibb.co/vqr9sBX/5432299.jpg);
 
 .bg {
-  background-image: url(https://i.ibb.co/YWJsfKK/5231801.jpg);
+  background-image: url("https://i.ibb.co/bJmgBP4/5477662.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -16,6 +16,7 @@
   overflow: auto;
   padding: 3em;
   position: absolute;
+
 }
 
 #img-bg {
@@ -25,12 +26,13 @@
   background-size: cover;
   display: flex;
   align-items: center;
+
 }
 
 .box {
   box-sizing: border-box;
-  box-shadow: 2px 2px 2px 2px #f34534;
-  border-radius: 5px;
+  box-shadow: 50px 5px 5px 5px #765ac4;
+  border-radius: 20px;
 }
 
 input {
@@ -38,27 +40,28 @@ input {
 }
 
 .pokebola {
-  width: 67px;
+  width: 110px;
   height: auto;
-  margin-left: 0;
+  margin-left: -50px;
 }
 
 .login {
   font-family: "VT323", monospace;
-  font-size: 18px;
+  font-size: 16px;
+  color: rgb(143, 67, 194);
 }
 .login-font {
   font-family: "VT323", monospace;
   font-size: 35pt;
   display: flex;
-  align-items: center;
+  align-items: right;
 }
 
 .box {
-  box-shadow: 20px 20px 58px rgba(163, 7, 225, 0.25);
-  border-top: 1px solid rgba(215, 156, 226, 0.5);
-  border-right: 1px solid rgba(209, 62, 185, 0.5);
-  backdrop-filter: blur(10px);
+  box-shadow: 20px 20px 58px rgba(188, 88, 228, 0.25);
+  border-top: 10px solid rgba(108, 215, 223, 0.747);
+  border-right: 1px solid rgba(228, 46, 197, 0.178);
+  backdrop-filter: blur(8px);
 
   -webkit-backdrop-filter: blur(10px);
 }
@@ -93,4 +96,12 @@ input {
   100% {
     background-position-y: -480px;
   }
+}
+
+.color-font{
+  color: #25c0f0 !important;
+}
+
+.log{
+  margin-left: 20px !important;
 }
