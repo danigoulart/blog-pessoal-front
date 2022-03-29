@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Unica+One&display=swap");
+
+/* Background */
+.bg {
+  background-image: url("https://i.ibb.co/NxwP60J/5508842.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  background-position: center;
+  display: flex;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  right: 0;
+  overflow: auto;
+  padding: 3em;
+  position: absolute;
+}
+
+#img-bg {
+  min-height: 800px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+
+/* glasmorfism */
+.box {
+  box-sizing: border-box;
+  box-shadow: 50px 5px 5px 5px #b87ad1;
+  border-radius: 35px;
+}
+
+.box {
+  box-shadow: 20px 20px 58px rgba(228, 46, 198, 0.397);
+  border-top: 3px solid rgba(228, 46, 198, 0.397);
+  border-right: 3px solid rgba(228, 46, 198, 0.397);
+  border-left: 3px solid rgba(228, 46, 198, 0.397);
+  border-bottom: 3px solid rgba(228, 46, 198, 0.397);
+  backdrop-filter: blur(8px); /* nível opacidade */
+
+  -webkit-backdrop-filter: blur(80px); /* Aplica filtros especificos*/
+}
+
+.fc {
+  font-family:'Unica One', cursive !important;
+  font-size: 16pt;
+  display: flex;
+  align-items: right;
+  color: #e6b6e4 !important;
+  padding: 10px;
+}
+
+.cf {
+  font-family: "VT323", monospace;
+  font-size: 14pt;
+  color: #ff1493;
+}
+

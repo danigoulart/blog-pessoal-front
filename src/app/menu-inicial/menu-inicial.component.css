@@ -1,0 +1,57 @@
+
+
+@keyframes animate {
+  0% {
+    background-position-y: 0px;
+  }
+
+  100% {
+    background-position-y: -480px;
+  }
+}
+
+/* Fontes */
+.navbar-brand {
+  font-size: 30pt;
+  font-family:'Unica One', cursive !important;
+  color: #660d72 !important;
+  text-decoration: none;
+}
+.color-font {
+  color: #4e0b57 !important;
+}
+
+.log {
+  margin-left: 20px !important;
+}
+
+
+/*botoes gradiente*/
+
+.btn {
+  flex: 1 1 auto;
+  margin: 5px;
+  padding: 3px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: rgb(193, 197, 230);
+ /* text-shadow: 0px 0px 10px rgba(0,0,0,0.2);*/
+  box-shadow: 0 0 20px rgba(117, 56, 185, 0.466);
+  border-radius: 80px;
+ }
+
+
+
+/* <- Magic Stuff Start */
+
+.btn:hover {
+  background-position: right center; /* change the direction of the change here */
+}
+
+.btn-2 {
+  background-image: linear-gradient(to right, #e0bce9 0%, #a6c1ee 51%, #d893e9 100%);
+}
+
+

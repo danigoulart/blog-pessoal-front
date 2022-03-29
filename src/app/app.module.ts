@@ -1,3 +1,4 @@
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -8,6 +9,8 @@ import { RodapeComponent } from './rodape/rodape.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { CadastrarComponent } from './cadastrar/cadastrar.component';
+import { FormsModule } from '@angular/forms';
+import { MenuInicialComponent } from './menu-inicial/menu-inicial.component';
 
 @NgModule({
   declarations: [
@@ -16,11 +19,14 @@ import { CadastrarComponent } from './cadastrar/cadastrar.component';
     RodapeComponent,
     HomeComponent,
     LoginComponent,
-    CadastrarComponent
+    CadastrarComponent,
+    MenuInicialComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
