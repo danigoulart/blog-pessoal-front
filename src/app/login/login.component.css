@@ -1,5 +1,6 @@
 @import url(https://i.ibb.co/vqr9sBX/5432299.jpg);
 
+
 .bg {
   background-image: url("https://i.ibb.co/bJmgBP4/5477662.jpg");
   background-position: center;
@@ -14,11 +15,9 @@
   top: 0;
   right: 0;
   overflow: auto;
-  padding: 3em;
-  position: absolute;
-
 }
 
+/* Imagem lateral  */
 #img-bg {
   min-height: 800px;
   background-position: center;
@@ -61,7 +60,7 @@ input {
   box-shadow: 20px 20px 58px rgba(188, 88, 228, 0.25);
   border-top: 10px solid rgba(108, 215, 223, 0.747);
   border-right: 1px solid rgba(228, 46, 197, 0.178);
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(2px);
   text-decoration: none;
   -webkit-backdrop-filter: blur(10px);
 }

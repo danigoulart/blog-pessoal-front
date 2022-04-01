@@ -6,7 +6,6 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  display: flex;
   align-items: center;
   background-position: center;
   display: flex;
@@ -15,8 +14,6 @@
   top: 0;
   right: 0;
   overflow: auto;
-  padding: 3em;
-  position: absolute;
 }
 
 #img-bg {
@@ -47,7 +44,7 @@
 }
 
 .fc {
-  font-family:'Unica One', cursive !important;
+  font-family: "Unica One", cursive !important;
   font-size: 16pt;
   display: flex;
   align-items: right;
@@ -60,4 +57,3 @@
   font-size: 14pt;
   color: #ff1493;
 }
-

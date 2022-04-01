@@ -1,3 +1,5 @@
+import { Postagem } from "./Postagem";
+
 export class Usuario{
 
   public id: number;
@@ -11,5 +13,6 @@ export class Usuario{
   public foto: string;
 
   // postagem vai entrar depois quando criar a model de postagem
+  public postagem: Postagem[];
 
 }
