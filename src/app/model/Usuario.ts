@@ -12,6 +12,8 @@ export class Usuario{
 
   public foto: string;
 
+  public tipo: string;
+
   // postagem vai entrar depois quando criar a model de postagem
   public postagem: Postagem[];
 

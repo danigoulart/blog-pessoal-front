@@ -9,8 +9,10 @@ export class UsuarioLogin {
 
   public foto: string;
 
+  public tipo: string;
+
   public token: string;
 
-  
+
 
 }

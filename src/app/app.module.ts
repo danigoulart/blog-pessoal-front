@@ -11,6 +11,7 @@ import { LoginComponent } from './login/login.component';
 import { CadastrarComponent } from './cadastrar/cadastrar.component';
 import { FormsModule } from '@angular/forms';
 import { MenuInicialComponent } from './menu-inicial/menu-inicial.component';
+import { FeedComponent } from './feed/feed.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { MenuInicialComponent } from './menu-inicial/menu-inicial.component';
     HomeComponent,
     LoginComponent,
     CadastrarComponent,
-    MenuInicialComponent
+    MenuInicialComponent,
+    FeedComponent
   ],
   imports: [
     BrowserModule,

@@ -21,7 +21,8 @@
 
               <div class="form-group  font">
                 <label for="Nome">Nome</label>
-                <input [(ngModel)]="usuario.nome" type="text"class="form-control" type="text" name="nome" id="nome" placeholder="Digite seu nome">
+                <input [(ngModel)]="usuario.nome" type="text" class="form-control" type="text" name="nome" id="nome"
+                  placeholder="Digite seu nome">
               </div>
 
               <div class="form-group  font">
@@ -32,22 +33,36 @@
 
               <div class="form-group  font">
                 <label for="Foto">Link da foto</label>
-                <input [(ngModel)]="usuario.foto" class="form-control" type="text" name="foto" id="foto" placeholder="Digite o link da sua foto">
+                <input [(ngModel)]="usuario.foto" class="form-control" type="text" name="foto" id="foto"
+                  placeholder="Digite o link da sua foto">
               </div>
 
               <div class="form-group  font">
                 <label for="Senha">Senha</label>
-                <input  (input)="confirmeSenha($event)" class="form-control" type="password" name="senha" id="senha" placeholder="Digite sua senha">
+                <input (input)="confirmSenha($event)" class="form-control" type="password" name="senha" id="senha"
+                  placeholder="Digite sua senha">
               </div>
 
               <div class="form-group  font">
                 <label for="confirmeSenha">Confirmar senha</label>
-                <input [(ngModel)]="usuario.senha" class="form-control" type="password" name="senha" id="senha" placeholder="Confirme sua senha">
+                <input [(ngModel)]="usuario.senha" class="form-control" type="password" name="senha" id="confirmSenha"
+                  placeholder="Confirme sua senha">
               </div>
 
+              <div class="form-group  font">
+                <label for="tipo">Tipo de Usuário</label>
+                <select class="form-control" name="tipo" id="tipo" (change)="tipoUser($event)">
+                <option>Selecione um tipo de usuário:</option>
+                <option value="normal">Usuário comum</option>
+                <option value="adm">Usuário Administrador</option>
+              </select>
+              </div>
+
+
               <div class="d-flex justify-content-center mb-3 font">
-                <button type="submit" class="btn btn-outline-dark btn-2 m-20" routerLink='/login'>Cancelar</button>
-                <button (click)="cadastrarUsuario()" type="submit" class="btn btn-outline-dark btn-1 m-20">Cadastrar</button>
+                <button type="submit" class="btn btn-outline-dark btn-2 m-20" routerLink='/home'>Cancelar</button>
+                <button (click)="cadastrarUsuario()" type="submit"
+                  class="btn btn-outline-dark btn-1 m-20">Cadastrar</button>
               </div>
             </div>
           </div>
@@ -59,4 +74,3 @@
 
   </div>
 </div>
-
