@@ -11,11 +11,11 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto d-flex align-items-center">
       <li class="nav-item active">
-        <img src="https://i.ibb.co/2SfKWpM/download20220101203425.png" alt="imagem do usuario" width="50px"
+        <img src="{{foto}}" alt="imagem do usuario" width="50px"
           height="50px" class="img-fluid rounded-circle"> <!-- Vai mostrar a foto da pessoa no menu -->
       </li>
       <li class="nav-item pl-3">
-        <p class="mt-2 font-weight-bold text-white fs-16">Nome do Usuário(a)</p>
+        <p class="mt-2 font-weight-bold text-white fs-16">Olá, {{nome}}</p>
       </li>
 
       <li class="nav-item pl-3 font-color">
@@ -28,7 +28,7 @@
 
     <ul class="navbar-nav ml-auto d-flex align-items-center">
       <li class="nav-item pl-3">
-        <a class="mt-1 font-weight-bold text-white fs-16 ml-2">Sair
+        <a (click)="sair()" class="mt-1 font-weight-bold text-white fs-16 ml-2">Sair
           <i class="fa-solid fa-right-from-bracket ml-3"></i></a>
       </li>
 

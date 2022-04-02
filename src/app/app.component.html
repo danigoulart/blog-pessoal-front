@@ -1,6 +1,6 @@
-<app-menu-inicial></app-menu-inicial>
+<app-menu *ngif="auth.logado() == false" ></app-menu>
+<app-menu-inicial *ngif="auth.logado() == true"></app-menu-inicial>
+
 <router-outlet> </router-outlet>
+
 <app-rodape></app-rodape>
-
-
-
