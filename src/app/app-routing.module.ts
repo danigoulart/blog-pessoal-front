@@ -5,6 +5,7 @@ import { FeedComponent } from './feed/feed.component';
 import { HomeComponent } from './home/home.component';
 
 import { LoginComponent } from './login/login.component';
+import { TemaComponent } from './tema/tema.component';
 
 const routes: Routes = [
 
@@ -15,8 +16,10 @@ const routes: Routes = [
   {path:'cadastrar', component: CadastrarComponent},
 
   {path:'home', component: HomeComponent},
-  
-  {path: 'feed', component: FeedComponent}
+
+  {path: 'feed', component: FeedComponent},
+
+  {path: 'tema', component: TemaComponent}
 
 
 

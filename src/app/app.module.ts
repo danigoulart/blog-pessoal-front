@@ -14,6 +14,7 @@ import { LoginComponent } from './login/login.component';
 import { CadastrarComponent } from './cadastrar/cadastrar.component';
 import { MenuInicialComponent } from './menu-inicial/menu-inicial.component';
 import { FeedComponent } from './feed/feed.component';
+import { TemaComponent } from './tema/tema.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { FeedComponent } from './feed/feed.component';
     LoginComponent,
     CadastrarComponent,
     MenuInicialComponent,
-    FeedComponent
+    FeedComponent,
+    TemaComponent
   ],
   imports: [
     BrowserModule,
