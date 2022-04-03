@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Unica+One&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@400;500&family=Comfortaa:wght@300;700&family=Gothic+A1:wght@700&family=Josefin+Sans:wght@100;200;300&family=Maven+Pro&family=Montserrat+Alternates:wght@100;200&family=Montserrat:wght@100&family=Press+Start+2P&family=Raleway:wght@300&family=Red+Hat+Mono&family=Smooch+Sans:wght@200&family=Yanone+Kaffeesatz:wght@300;400&display=swap');
 
 /* Background */
 .bg {
@@ -9,20 +10,7 @@
   align-items: center;
   background-position: center;
   display: flex;
-  bottom: 0;
-  left: 0;
-  top: 0;
-  right: 0;
   overflow: auto;
-}
-
-#img-bg {
-  min-height: 800px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  align-items: center;
 }
 
 /* glasmorfism */
@@ -43,6 +31,19 @@
   -webkit-backdrop-filter: blur(80px); /* Aplica filtros especificos*/
 }
 
+.card1 {
+  box-shadow: 20px 20px 58px rgba(228, 46, 198, 0.397);
+  border-top: 3px solid rgba(228, 46, 198, 0.397);
+  border-right: 3px solid rgba(228, 46, 198, 0.397);
+  border-left: 3px solid rgba(228, 46, 198, 0.397);
+  border-bottom: 3px solid rgba(228, 46, 198, 0.397);
+  backdrop-filter: blur(8px)!important; /* nível opacidade */
+  border-radius: 30px;
+
+
+  -webkit-backdrop-filter: blur(80px); /* Aplica filtros especificos*/
+}
+
 .fc {
   font-family: "Unica One", cursive !important;
   font-size: 16pt;
@@ -56,4 +57,36 @@
   font-family: "VT323", monospace;
   font-size: 14pt;
   color: #ff1493;
+}
+
+.font{
+  font-family: 'Yanone Kaffeesatz', sans-serif, monospace !important;
+  font-size: 30pt;
+  color: #f2f5f6;
+  display: flex;
+  align-items: right;
+  padding: 10px;
+}
+
+.box2 {
+  backdrop-filter: blur(30px); /* nível opacidade */
+  -webkit-backdrop-filter: blur(90px); /* Aplica filtros especificos*/
+
+  width: 680px !important;
+  background-color: rgba(102, 51, 153, 0.418);
+  box-sizing: border-box;
+  box-shadow: 1px 1px 50px 5px #b87ad1; /* sombreado */
+  border-radius: 50px; /* arredondamento da borda */
+}
+
+.sobre{
+  margin-right: -80px!important;
+  margin-top: 45px !important;
+}
+.font:hover{
+  color: rgb(177, 15, 172);
+}
+
+.proj-crr{
+  margin-right: -90px!important;
 }

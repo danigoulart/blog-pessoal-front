@@ -10,6 +10,8 @@ import { AuthService } from '../service/auth.service';
   styleUrls: ['./cadastrar.component.css']
 })
 export class CadastrarComponent implements OnInit {
+
+  
   // criando um objeto usuario para receber/referenciar a Model Usuario
   usuario: Usuario = new Usuario
   usuarioLogin: UsuarioLogin = new UsuarioLogin
@@ -23,7 +25,7 @@ export class CadastrarComponent implements OnInit {
 
   ) { }
 
-  ngOnInit(): void {   // responsavel por iniciar a página dando prioridade aos métodos daqui
+  ngOnInit() {   // responsavel por iniciar a página dando prioridade aos métodos daqui
     window.scroll(0,0)
 
   }

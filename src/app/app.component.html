@@ -1,5 +1,5 @@
-<app-menu *ngif="auth.logado() == false" ></app-menu>
-<app-menu-inicial *ngif="auth.logado() == true"></app-menu-inicial>
+<app-menu *ngIf='authService.Logado() == true'></app-menu>
+<app-menu-inicial *ngIf='authService.Logado() == false'></app-menu-inicial>
 
 <router-outlet> </router-outlet>
 
