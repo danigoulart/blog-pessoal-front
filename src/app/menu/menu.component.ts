@@ -17,7 +17,10 @@ export class MenuComponent implements OnInit {
   ) { }
 
   ngOnInit() {
+
+
   }
+
 
   sair(){
     this.router.navigate(['/home'])
