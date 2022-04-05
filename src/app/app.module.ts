@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 
+
 import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component';
 import { RodapeComponent } from './rodape/rodape.component';
@@ -15,6 +16,11 @@ import { CadastrarComponent } from './cadastrar/cadastrar.component';
 import { MenuInicialComponent } from './menu-inicial/menu-inicial.component';
 import { FeedComponent } from './feed/feed.component';
 import { TemaComponent } from './tema/tema.component';
+import { AlertaComponent } from './alerta/alerta.component';
+import { TemaEditComponent } from './edit/tema-edit/tema-edit.component';
+import { UserEditComponent } from './edit/user-edit/user-edit.component';
+import { PostagemEditComponent } from './edit/postagem-edit/postagem-edit.component';
+import { TemaDeleteComponent } from './delete/tema-delete/tema-delete.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +32,12 @@ import { TemaComponent } from './tema/tema.component';
     CadastrarComponent,
     MenuInicialComponent,
     FeedComponent,
-    TemaComponent
+    TemaComponent,
+    AlertaComponent,
+    TemaEditComponent,
+    UserEditComponent,
+    PostagemEditComponent,
+    TemaDeleteComponent
   ],
   imports: [
     BrowserModule,
@@ -36,7 +47,8 @@ import { TemaComponent } from './tema/tema.component';
   ],
   providers: [{
     provide: LocationStrategy,
-    useClass: HashLocationStrategy
+    useClass: HashLocationStrategy,
+
   }],
   bootstrap: [AppComponent]
 })

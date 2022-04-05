@@ -1,7 +1,94 @@
-.fs-54{
-  font-size: 54pt;
+.bg{
+  background-image   : url(https://i.ibb.co/vXqh1Ks/02fe627668f0f9b589ad1d3b01ac6000.gif);
+  min-height         : 652px;
+  background-position: center;
+  background-repeat  : no-repeat;
+  background-size    : cover;
+  display            : flex;
+  align-items        : center;
+  opacity            : 0, 2;
+
+}
+.txt-home{
+margin-bottom: 0;
+font-family: 'VT323', monospace;
+font-size: 20pt;
+text-decoration: none;
+margin: 0;
+color: brown;
 }
 
-.fs-18{
-    font-size: 18pt;
+.fas{
+  font-size: 15pt;
+}
+
+.text{
+  color      : aliceblue;
+  font-family: 'VT323', monospace;
+  font-size  : 35pt;
+  font-weight: bold;
+  text-shadow: 3px 3px black;
+}
+
+.text1{
+  color      : rgb(0, 0, 0);
+  font-family: 'VT323', monospace;
+  font-size  : 35pt;
+  font-weight: bold;
+
+}
+
+/*botao editar e apagar de tema*/
+.btn {
+  font-family   : 'VT323', monospace;
+  font-size     : 15pt;
+  font-weight   : bold;
+  margin-right  : 40px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition    : 0.5s;
+  line-height   : 30px;
+}
+.btn-cadastro{
+  background-color: rgb(0, 247, 255);
+  color: black;
+  margin-left: 45px;
+}
+
+
+.btn-cadastro:hover{
+  background      : #e088d0 url();
+  color           : #ffff;
+  transition-delay: 0.5s;
+  background-size : auto;
+  animation       : animate 0.8s steps(8) forwards;
+}
+
+.btn-edit:hover {
+  background      : #4ce5f5 url();
+  color           : #ffff;
+  transition-delay: 0.5s;
+  background-size : auto;
+  animation       : animate 0.8s steps(8) forwards;
+}
+
+.btn-delete:hover{
+  background      : #f34534 url();
+  color           : #ffff;
+  transition-delay: 0.5s;
+  background-size : auto;
+  animation       : animate 0.8s steps(8) forwards;
+}
+
+
+
+@keyframes animate {
+  0% {
+      background-position-y: 0px;
+  }
+
+  100% {
+      background-position-y: -480px;
+  }
+
 }

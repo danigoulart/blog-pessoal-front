@@ -1,10 +1,197 @@
-.crd-txt{
-  background-color: rgb(46, 2, 41);
-}
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@400;500&family=BIZ+UDGothic:wght@700&family=Comfortaa:wght@300;700&family=Gothic+A1:wght@700&family=Josefin+Sans:wght@100;200;300&family=Maven+Pro&family=Montserrat+Alternates:wght@100;200&family=Montserrat:wght@100&family=Press+Start+2P&family=Raleway:wght@300&family=Red+Hat+Mono&family=Smooch+Sans:wght@200&family=Yanone+Kaffeesatz:wght@300;400&display=swap');
 
 .fs-54{
-font-size: 54pt;
+font-size: 60pt;
+font-family: 'Comfortaa', cursive, monospace !important;
+color:rgb(163, 41, 220);
+text-shadow: 5px 1px 10px rgb(172, 118, 186);
+}
+.fs-54:hover{
+  color: rgb(245, 245, 245) !important;
+
 }
 .fs-18{
-  font-size: 18pt;
+  font-size: 25pt;
+  font-family: 'Maven Pro', sans-serif !important;
+}
+.fs-18:hover{
+  color: rgb(150, 55, 191) !important;
+
+}
+.ft-st{
+  font-family: 'BIZ UDGothic', sans-serif;
+}
+
+/* https://i.ibb.co/qpHGt2J/88d9cb797bf05a2.gif
+https://i.ibb.co/dkDDv0d/cyberpunk.gif
+https://i.ibb.co/phGG6qd/tumblr-7de0f9898993d36ef22541cf29382628-7effaeba-500.webp
+ */
+
+.bg-inicio{
+  background-image   : url(https://i.ibb.co/phGG6qd/tumblr-7de0f9898993d36ef22541cf29382628-7effaeba-500.webp
+  );
+  min-height         : 760px;
+  background-position: center;
+  background-repeat  : no-repeat;
+  background-size    : cover;
+  display            : flex;
+  align-items        : center;
+  opacity            : 0, 2;
+}
+
+.game{
+  width: 700px!important;
+  margin-top: 0;
+}
+
+.txt {
+  color      : aliceblue;
+  font-family: 'VT323', monospace;
+  font-size  : 35pt;
+  font-weight: bold;
+  text-shadow: 3px 3px black;
+}
+.text-bv{
+  color: #ffffff!important;
+}
+
+.btn-1 {
+  font-family   : 'VT323', monospace;
+  font-size     : 16pt;
+  font-weight   : bold;
+
+  margin-top: 62px;
+  padding: 10px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  transition    : 0.5s;
+  position      : absolute;
+  flex-direction: column;
+  text-align    : center;
+  top           : 100px;
+  line-height   : 60px;
+  backdrop-filter: blur(8px);
+
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.btn-2 {
+  font-family   : 'VT323', monospace;
+  font-size     : 16pt;
+  font-weight   : bold;
+
+  margin-top    : 120px;
+  padding: 10px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  transition    : 0.5s;
+  position      : absolute;
+  flex-direction: column;
+  text-align    : center;
+  top           : 100px;
+  line-height   : 60px;
+  backdrop-filter: blur(8px);
+
+  -webkit-backdrop-filter: blur(8px);
+}
+.btn-1:hover {
+  background      : #4ce5f5 url(https://i.ibb.co/Yh5zSMH/pixel.png);
+  color           : #ffff;
+  transition-delay: 0.5s;
+  background-size : auto;
+  animation       : animate 0.8s steps(8) forwards;
+}
+.btn-2:hover {
+  background      : #4ce5f5 url(https://i.ibb.co/Yh5zSMH/pixel.png);
+  color           : #ffff;
+  transition-delay: 0.5s;
+  background-size : auto;
+  animation       : animate 0.8s steps(8) forwards;
+}
+
+.navs-tabs {
+  font-family: 'VT323', monospace;
+  color      : #4ce5f5;
+  font-weight: bold;
+  font-size  : 14pt;
+}
+
+.modal-bg {
+  box-shadow     : 20px 20px 58px rgba(82, 61, 131, 0.25);
+  border-top     : 1px solid rgba(82, 61, 131, 0.5);
+  border-right   : 1px solid rgba(82, 61, 131, 0.5);
+  backdrop-filter: blur(8px);
+}
+
+.bg-post {
+
+  box-shadow         : 20px 20px 60px 20px rgb(178, 140, 188);
+  border-top         : 1px solid rgba(82, 61, 131, 0.5);
+  border-right       : 1px solid rgba(82, 61, 131, 0.5);
+  backdrop-filter    : blur(8px);
+  background-image   : url(https://i.ibb.co/jfym8Rq/7041074.gif);
+  background-position: center;
+  background-repeat  : no-repeat;
+  background-size    : cover;
+}
+
+.btn-confirm {
+  font-size: 15pt;
+}
+
+.btn-cancel {
+  font-size: 15pt;
+}
+
+.btn-11:hover {
+  background      : #4ce5f5 url(https://i.ibb.co/Yh5zSMH/pixel.png);
+  color           : #ffff;
+  transition-delay: 0.5s;
+  background-size : auto;
+  animation       : animate 0.8s steps(8) forwards;
+}
+.btn-22:hover {
+  background      : #4ce5f5 url(https://i.ibb.co/Yh5zSMH/pixel.png);
+  color           : #ffff;
+  transition-delay: 0.5s;
+  background-size : auto;
+  animation       : animate 0.8s steps(8) forwards;
+
+
+}
+@keyframes animate {
+  0% {
+      background-position-y: 0px;
+  }
+
+  100% {
+      background-position-y: -480px;
+  }
+
+}
+
+.modal-title {
+  font-size  : 35pt;
+  color      : aliceblue;
+  font-weight: bold;
+  text-shadow: 3px 3px black;
+}
+
+.form-group {
+  font-size  : 20pt;
+  text-shadow: 2px 2px 2px black;
+  font-weight: bold;
+}
+
+.font-color{
+ color: #6f42c1!important;
+}
+
+.lnk-txt{
+  text-decoration: none !important;
+  color: rgb(133, 55, 188)!important;
+
+}
+.lnk-txt:hover{
+  color:#4ce5f5!important;
 }
