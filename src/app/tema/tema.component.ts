@@ -16,6 +16,7 @@ import { TemaService } from '../service/tema.service';
 export class TemaComponent implements OnInit {
 
   tema: Tema = new Tema;
+  
   listaDeTemas: Tema[];  // referenciando que é uma lista []
 
   constructor(

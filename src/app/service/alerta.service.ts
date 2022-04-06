@@ -19,7 +19,7 @@ export class AlertaService {
       bsModalRef.content.type = type
       bsModalRef.content.message = message
   }
-/*
+
    showAlertDanger(message : string){
      this.showAlert(message, 'danger')
    }
@@ -30,5 +30,5 @@ export class AlertaService {
    showAlertInfo(message: string){
     this.showAlert(message, 'info')
    }
-   */
+   
 }

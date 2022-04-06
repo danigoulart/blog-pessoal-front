@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+
+.bg{
+    background-image   : url(https://storage.ko-fi.com/cdn/useruploads/display/78344505-dc22-4750-876b-a689ca7669b1_thingsthatroll.gif);
+    min-height         : 652px;
+    background-position: center;
+    background-repeat  : no-repeat;
+    background-size    : cover;
+    display            : flex;
+    align-items        : center;
+    opacity            : 0, 2;
+
+
+}
+
+.txt {
+    color      : aliceblue;
+    font-family: 'VT323', monospace;
+    font-size  : 35pt;
+    font-weight: bold;
+    text-shadow: 3px 3px black;
+}
+.txt1{
+    color      : aliceblue;
+    font-family: 'VT323', monospace;
+    font-size  : 35pt;
+}
+
+.btn {
+    font-family   : 'VT323', monospace;
+    font-size     : 15pt;
+    font-weight   : bold;
+
+    margin-top    : 45px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition    : 0.5s;
+    background-color: rgba(255, 251, 0, 0.658);
+
+}
+
+
+.btn-1:hover {
+    background      : #4ce5f5 url();
+    color           : #ffff;
+    transition-delay: 0.5s;
+    background-size : auto;
+    animation       : animate 0.8s steps(8) forwards;
+}
+.btn-2:hover {
+    background      : #f34534 url();
+    color           : #ffff;
+    transition-delay: 0.5s;
+    background-size : auto;
+    animation       : animate 0.8s steps(8) forwards;
+}
+
+
+
+@keyframes animate {
+    0% {
+        background-position-y: 0px;
+    }
+
+    100% {
+        background-position-y: -480px;
+    }
+
+}

@@ -14,17 +14,13 @@ const routes: Routes = [
   {path:'', redirectTo:'home', pathMatch: 'full'},
 
   {path:'login', component: LoginComponent},
-
   {path:'cadastrar', component: CadastrarComponent},
-
   {path:'home', component: HomeComponent},
 
   {path: 'feed', component: FeedComponent},
-
   {path: 'tema', component: TemaComponent},
 
   {path: 'tema-edit/:id', component: TemaEditComponent},
-
   {path: 'tema-delete/:id', component: TemaDeleteComponent},
 
 

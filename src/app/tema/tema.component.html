@@ -4,8 +4,8 @@
 
       <div class="col-md-12">
 
-          <a routerLink='/feed' class="text-left txt-home">
-              <i class="fas fa-home mr-2"></i>Voltar ao Início </a>
+        <a routerLink='/feed' class="text-left txt-home">
+          <i class="fas fa-home mr-2">Voltar ao Início </i></a>
 
           <h1 class="fs-54 text-center text">Temas</h1>
           <h5 class="fs-18 text-center text">Veja aqui todos os temas cadastrados ou cadastre um novo:</h5>
@@ -14,10 +14,7 @@
               <div class="col-md-3">
                   <div class="form-group">
 
-                    <input [(ngModel)]='tema.nome' type="text" class="form-control" id="temaNome"
-                          placeholder="Digite o Nome do tema">
-
-                      <input [(ngModel)]='tema.descricao' type="text" class="form-control" id="descricao"
+                      <input [(ngModel)]='tema.descricao' type="text" class="form-control" id="temaDescricao"
                           placeholder="Digite a descrição do tema">
                   </div>
 
@@ -49,18 +46,15 @@
                   <tr>
                       <th scope="col">#</th>
                       <th scope="col">Nome do Tema</th>
-                      <th scope="col">Descrição</th>
                       <th scope="col" class="text-right">Modificações</th>
-
                   </tr>
               </thead>
-
               <tbody>
 
+                <!-- Criando um FOR para alimentar a tabela com temas cadastrados automaticamente-->
                   <tr *ngFor='let item of listaDeTemas'>
 
                       <th>{{item.id}}</th>
-                      <th>{{item.nome}}</th>
                       <td>{{item.descricao}}</td>
 
                       <td class="d-flex justify-content-end">

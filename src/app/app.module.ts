@@ -21,6 +21,8 @@ import { TemaEditComponent } from './edit/tema-edit/tema-edit.component';
 import { UserEditComponent } from './edit/user-edit/user-edit.component';
 import { PostagemEditComponent } from './edit/postagem-edit/postagem-edit.component';
 import { TemaDeleteComponent } from './delete/tema-delete/tema-delete.component';
+import { ModalModule } from 'ngx-bootstrap/modal';
+import { OrderModule } from 'ngx-order-pipe';
 
 @NgModule({
   declarations: [
@@ -37,13 +39,16 @@ import { TemaDeleteComponent } from './delete/tema-delete/tema-delete.component'
     TemaEditComponent,
     UserEditComponent,
     PostagemEditComponent,
-    TemaDeleteComponent
+    TemaDeleteComponent,
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    ModalModule.forRoot(),
+    OrderModule
   ],
   providers: [{
     provide: LocationStrategy,
