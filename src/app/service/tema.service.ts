@@ -14,7 +14,6 @@ export class TemaService {
 
     private http: HttpClient
 
-
   ) { }
 
   token = {
@@ -23,14 +22,14 @@ export class TemaService {
 
   }
 
-  postarTema(tema:Tema): Observable<Tema>{
+  postarTema(tema: Tema): Observable<Tema>{
     return this.http.post<Tema>('http://localhost:8080/temas', tema, this.token)
   }
 
   getAllTema(): Observable<Tema[]>{
     return this.http.get<Tema[]>('http://localhost:8080/temas', this.token)
   }
-  putTema (tema:Tema): Observable<Tema>{
+  putTema (tema: Tema): Observable<Tema>{
     return this.http.put<Tema>('http://localhost:8080/temas', tema,  this.token)
   }
 

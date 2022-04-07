@@ -20,21 +20,16 @@ export class FeedComponent implements OnInit {
 
 
   postagem: Postagem = new Postagem()
-
   listaDePostagens: Postagem[]
-
   tituloPost: string
 
+
   tema: Tema = new Tema()
-
   listaDeTemas: Tema[]
-
   idTema: number
-
   descricaoTema: string
 
   usuario: Usuario = new Usuario()
-
   idUsuario = environment.id
 
   key = 'data'
@@ -66,7 +61,6 @@ export class FeedComponent implements OnInit {
  getAllTema(){
     this.temaService.getAllTema().subscribe((resp: Tema[]) =>{
       this.listaDeTemas = resp
-
     })
   }
 
@@ -117,7 +111,7 @@ export class FeedComponent implements OnInit {
 
 
   publicar() {
-    
+
   this.tema.id = this.idTema
   this.postagem.tema = this.tema
 
@@ -145,6 +139,7 @@ export class FeedComponent implements OnInit {
     })
 
     this.postagem = new Postagem()
+    /* método para buscar todos os temas novamente ao publicar */
     this.getAllPostagens()
   })
 

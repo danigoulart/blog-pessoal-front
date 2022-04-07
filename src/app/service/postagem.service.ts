@@ -15,6 +15,8 @@ export class PostagemService {
     headers: new HttpHeaders().set('Authorization', environment.token)
   } /* httpheaders : Para inserir o token no Authorization e no Header da minha requisição.*/
 
+  
+
   getAllPostagens(): Observable<Postagem[]> {
     return this.http.get<Postagem[]>('http://localhost:8080/postagens', this.token)
   }

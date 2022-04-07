@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+
+.txt{
+    font-family   : 'VT323', monospace;
+}
+.btn {
+    font-family   : 'VT323', monospace;
+    font-size     : 15pt;
+    font-weight   : bold;
+    margin-right  : 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition    : 0.5s;
+    line-height   : 30px;
+    margin-left: 20px;
+    background-color: rgba(248, 245, 52, 0.76);
+
+}
+
+.btn-1:hover {
+    background      : #4ce5f5 url();
+    color           : #ffff;
+    transition-delay: 0.5s;
+    background-size : auto;
+    animation       : animate 0.8s steps(8) forwards;
+}
+
+.btn-2:hover{
+    background      : #f34534 url();
+    color           : #ffff;
+    transition-delay: 0.5s;
+    background-size : auto;
+    animation       : animate 0.8s steps(8) forwards;
+}
+
+@keyframes animate {
+    0% {
+        background-position-y: 0px;
+    }
+
+    100% {
+        background-position-y: -480px;
+    }
+
+}

@@ -27,12 +27,16 @@ export class TemaDeleteComponent implements OnInit {
 
   ngOnInit(){
     if (environment.token == '') {
-      this.router.navigate(['/home'])
-  }
 
- this.id = this.route.snapshot.params['idTema']
-  this.findByIdTema(this.id)
+      this.router.navigate(['/home'])
+     }
+
+    this.id = this.route.snapshot.params['id']
+    
+    this.findByIdTema(this.id)
+
 }
+
 
 findByIdTema(id: number) {
   this.temaService.getByIdTema(id).subscribe((resp: Tema) => {
@@ -41,8 +45,9 @@ findByIdTema(id: number) {
 }
 
 apagar() {
+
   this.temaService.deleteTema(this.id).subscribe(() => {
-    
+
     Swal.fire({
       title: 'Tema apagado com sucesso!',
       showConfirmButton: false,
@@ -59,7 +64,9 @@ apagar() {
         no-repeat
       `
     })
+
     this.router.navigate(['/tema'])
+
   })
 }
 
