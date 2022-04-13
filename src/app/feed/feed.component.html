@@ -40,10 +40,29 @@
     </div>
   </nav>
 
+  <h2 *ngIf='listaDePostagens.length == 0' class="text-center text-secondary mt-5">
+    Não existem postagens ainda...
+  </h2>
+
 <!-- Mostrar todas postagens -->
+<!-- pesquisar postagens -->
+<div class="tab-content mt-5" id="nav-tabContent">
+  <div class="tab-pane fade show active" id="todasPostagens" role="tabpanel" aria-labelledby="nav-todasPostagens-tab">
+    <div class="row  d-flex justify-content-center mt-5 mb-5">
+      <div class="col-md-4">
+        <div class="form-group">
+          <input (keyup)='findByTituloPostagem()' type="text" class="form-control" id="titulo"
+            placeholder="Digite um titulo de postagem para pesquisar" [(ngModel)]="tituloPost">
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- modal mostrando as postagens -->
   <div class="tab-content mt-5" id="nav-tabContent">
     <div class="tab-pane fade show active " id="todasPostagens" role="tabpanel"
       aria-labelledby="nav-todasPostagens-tab">
+
       <div class="card-columns">
         <div class="card text-center"
          *ngFor=' let item of listaDePostagens | orderBy: key : reverse'>
@@ -59,9 +78,10 @@
       </div>
     </div>
 
-
+      <!-- coluna minhas postagens -->
     <div class="tab-pane fade" id="minhasPostagens" role="tabpanel" aria-labelledby="nav-minhasPostagens-tab">
         <div class="card-columns">
+
           <div class="card text-center" *ngFor='let item of usuario.postagem  | orderBy: key : reverse'>
             <div class="card-body">
               <h5 class="card-title m-0">{{item.titulo}}</h5>
@@ -76,6 +96,7 @@
               <a [routerLink]="['/postagem-delete', item.id]" class="text-danger" href="">
                 <i class="fas fa-trash"></i>
               </a>
+
             </div>
           </div>
         </div>
@@ -95,17 +116,7 @@
 
 
 
-<div class="tab-content mt-5" id="nav-tabContent">
-  <div class="tab-pane fade show active" id="todasPostagens" role="tabpanel" aria-labelledby="nav-todasPostagens-tab">
-    <div class="row  d-flex justify-content-center mt-5 mb-5">
-      <div class="col-md-4">
-        <div class="form-group">
-          <input (keyup)='findByTituloPostagem()' type="text" class="form-control" id="titulo"
-            placeholder="Digite um titulo de postagem para pesquisar" [(ngModel)]="tituloPost">
-        </div>
-      </div>
-    </div>
-  </div>
+
 
 
 
